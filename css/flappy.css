@@ -1,0 +1,59 @@
+.screen {
+    position: relative;
+    width: 1280px;
+    height: 720px;
+    background-color: #56bcfc;
+    border: 5px solid #1b85c7;
+    display: flex;
+    overflow: hidden;
+}
+
+.pontuation {
+    position: absolute;
+    top: -20px;
+    right: 40px;
+    z-index: 10;
+    font-size: 40px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+}
+
+.bird {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 330px;
+    z-index: 1;
+    flex-shrink: 0;
+}
+
+.obstacle {
+    height: 720px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.tube {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tube-border {
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(124,230,25,1) 15%, rgba(124,230,25,1) 100%);
+    border-radius: 5px;
+    border: 2px solid #000;
+}
+
+.tube-body {
+    width: 88%;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(124,230,25,1) 15%, rgba(124,230,25,1) 100%);
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
