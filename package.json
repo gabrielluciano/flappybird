@@ -1,0 +1,36 @@
+{
+  "name": "flappybird",
+  "version": "1.0.0",
+  "description": "en_US: Flappy bird game made as a project for a js course with only html, css and javascript.\r The current code is still a little messy but I have plans to refactor it soon. Feel free to use it and give suggestions for improvement.",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git-cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielluciano/flappybird.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gabrielluciano/flappybird/issues"
+  },
+  "homepage": "https://github.com/gabrielluciano/flappybird#readme",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
+    "cz-conventional-changelog": "^3.2.0",
+    "husky": "^4.2.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
